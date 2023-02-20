@@ -13,20 +13,14 @@ const newFolderName = function (folders) {
   // console.log(`User folders sorted: ${sortedFolders}`)
   // console.log('New folder will be: ')
   if (starterFolder === false) {
-    // console.log('New Folder')
-    if (folders.length === 0) {
-      folders = ['New Folder']
-      // console.log(folders)
-    } else {
-      folders.push('New Folder')
-      // console.log('New Folder')
-    }
+    folders = 'New Folder'
+    console.log(folders)
+    return folders
   } else {
-    // console.log(`New Folder (${newFoldersNum})`)
-    folders.push(`New Folder (${newFoldersNum})`)
+    console.log(folders)
+    return `New Folder (${newFoldersNum})`
+    // folders.push(`New Folder (${newFoldersNum})`)
   }
-  // console.log('\n')
-  console.log(folders)
 }
 // newFolderName(['New Folder (7)', 'New Folder', 'New Folder (5)', 'New Folder (9)'])
 // newFolderName(['New Folder', 'New Folder (2)', 'New Folder (7)', 'New Folder (3)', 'New Folder (5)', 'New Folder (4)'])
